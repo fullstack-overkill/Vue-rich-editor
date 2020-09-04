@@ -1,6 +1,12 @@
-#Vue-rich-editor
+# Vue-rich-editor
+### A rich editor vue component
 
 ![Demo Animation](https://github.com/fullstack-overkill/Vue-rich-editor/blob/master/docs/editor.gif?raw=true)
+
+
+[I'm an inline-style link with title](https://fullstack-overkill.github.io/Vue-rich-editor/ "Liked ? test right now.")
+
+***
 
 
 ## Project setup
