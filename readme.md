@@ -1,6 +1,6 @@
 #Vue-rich-editor
 
-![Demo Animation](./doc/demo.gif?raw=true)
+![Demo Animation](https://github.com/fullstack-overkill/Vue-rich-editor/blob/master/docs/editor.gif?raw=true)
 
 
 ## Project setup
