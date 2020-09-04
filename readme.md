@@ -4,7 +4,7 @@
 ![Demo Animation](https://github.com/fullstack-overkill/Vue-rich-editor/blob/master/docs/editor.gif?raw=true)
 
 
-[I'm an inline-style link with title](https://fullstack-overkill.github.io/Vue-rich-editor/ "Liked ? test right now.")
+[Liked ? test right now.    ](https://fullstack-overkill.github.io/Vue-rich-editor/ "Liked ? test right now.")
 
 ***
 
