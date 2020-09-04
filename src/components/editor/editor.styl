@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+edit-color1 = #ffffff
+edit-color2 = #979797
+edit-color3 = #e5e5e5
+edit-color4 = #283C46
+edit-color5 = #444444
+
+.hide-el
+    display: none   
+
+
+.disabled
+    cursor default !important
+    color: #A2A2A2 !important
+
+.editor-shadow
+    margin-top: 60px
+    display: flex
+    border-radius: 3px
+    box-shadow: 0 -1px 10px rgba(0,0,0,0.05), 0 1px 4px rgba(0,0,0,0.1), 0 10px 30px #f3ece8
+    .editor-paper
+        border-radius: 3px
+        display flex
+        flex-direction: column
+        align-items: center
+        width: 100vw
+        padding-top: 63px
+        max-width 930px
+        height 100%
+        background-color: edit-color1
+        .paper-divider
+            width: 100%   
+            border-top: 1px solid edit-color3
+            margin-bottom 30px
+        .paper-container
+            display: flex
+            flex-direction: row
+            width: 100%
+            max-width 693px
+            .paper-title
+                display: flex
+                margin-bottom 18px
+                .title
+                    border none
+                    font-weight: 900
+                    font-size: 45px
+                    height 45px
+                    color: edit-color4
+                .title:focus
+                    outline: none 
+                .title::placeholder
+                    font-weight: 900   
+        .paper-tolltip
+            display: flex
+            justify-content: center
+            align-items: center
+            flex-direction: row
+            width: 100%
+            height 40px    
+            position relative
+            border-top: 1px solid edit-color3
+            border-bottom: 1px solid edit-color3
+            .icon-tolltip
+                display: flex
+                justify-content: center
+                align-items: center
+                cursor pointer
+                user-select none
+                width: 36px
+                height: 40px
+                color: edit-color5            
+            .tolltip-container
+                display: flex
+                flex-direction: row
+                width: 100%
+                padding-left 7rem      
+                height 45px
+                align-items: center
+                
+                .icon-focus
+                    background-color: #cbeefa
+            .tolltip-undo-redo
+                display flex       
+                padding-right: 7rem
+                .disabled
+                    cursor default 
+                    color: #A2A2A2
+        .paper-content  
+            width: 100%
+            max-width 693px
+            margin-top: 28px
+            border none 
+            min-height: 328px
+            outline: 0px solid transparent;
+            color: edit-color4
+            margin-bottom 30px
+        [contenteditable]:focus
+            border: none   
+            outline: none  
+            outline: 0px solid transparent;
+        [contenteditable][placeholder]:empty:before {
+            content: attr(placeholder);
+            position: absolute;
+            color: gray;
+            background-color: transparent;
+         }
+
+@media only screen and (max-width: 670px) 
+    .editor-shadow
+        margin-top: 0px
+        display: flex
+        border-radius: 3px
+        box-shadow:  none 
+        height 100%
+        .editor-paper
+            height 100vh
+            .paper-tolltip
+                width: 100%
+                .tolltip-undo-redo
+                    padding: 0
+                .tolltip-container
+                    padding: 0
+            .paper-container
+                display: flex
+                flex-direction: row
+                width: 100%
+                max-width 693px
+                .paper-title
+                    width: 100%
+                    display: flex
+                    margin-bottom 18px
+                    .title
+                        width: 100%
+                        padding-left: 1rem;
+            .paper-content  
+                padding-top: 1.5em;
+                padding-left: 1rem;
+                padding-right: 1rem;
+                margin-left: -1rem;
+                margin-right: -1rem;
+
